@@ -20,7 +20,6 @@ COPY supervisord.conf /etc/supervisor/conf.d
 EXPOSE 5900
 CMD ["/usr/bin/supervisord","-c","/etc/supervisor/conf.d/supervisord.conf"]
 
-USER gopher
 WORKDIR /home/gopher
 
 RUN mkdir -p /home/gopher/src; \
